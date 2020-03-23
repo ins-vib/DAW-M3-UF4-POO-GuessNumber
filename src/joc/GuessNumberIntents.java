@@ -17,7 +17,7 @@ package joc;
 public class GuessNumberIntents extends GuessNumber {
     protected int maxIntents; // Variable que guarda el número màxim d'intents que l'usuari té
                               // per endevinar el número
-    private int intents;
+    private int intents; // Guardarà el número d'intents que ha consumit l'usuari
     
     public int getMaxIntents() {
         return maxIntents;
@@ -78,8 +78,10 @@ public class GuessNumberIntents extends GuessNumber {
             if(this.intents == this.maxIntents) { // si s'han esgotats els intents
                 this.acabat = true;  // Acabem el joc!
                 this.missatge ="Has perdut! El numero cercat era "+this.numeroAleatori;
+                   
             }
             else this.missatge = this.missatge+"Et queden "+(this.maxIntents - this.intents)+".";
+               // Al missatge que ha construit el pare hi afegim el numero d'intents que queden!
         }        
         return encertat;
     }
