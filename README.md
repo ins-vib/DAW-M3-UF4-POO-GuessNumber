@@ -21,9 +21,18 @@ Només cal comentat/descomentar la línia de creació del joc.
  Podem fer servir altres numeros o també new GuessNumber() o new GuessNumberIntents() per crear jocs amb valors per defecte.
 
 Activitat a realitzar:
-Implementa una nova classe anomenada GuessNumnerIntentsNoRepetits
+- Repassa el comportament de la classe GuessNumber i juga al joc fent servir la línia new GuessNumber(1,200).
+- Repassa com s'ha construit la classe GuessNumberIntents a partir de la classe GuessNumber. Juga al joc fent servir 
+ new GuessNumberIntents(10,1,200)
+- Implementa una nova classe anomenada GuessNumnerIntentsNoRepetits
 Aquesta nova classe que serà filla de la classe GuessNumberIntents, aprofitarà la funcionalitat
 de la classe GuessNumberIntents (les classes proporcionades NO es poden modificar!!!)
 per a que un joc no admeti que l'usuari pugui repetir números.
 S'informarà a l'usuari si el número està repetit, a través del mètode getMissatge()
 Els números repetits no descomptaran intents.
+En el mètode main has de crear un objecte del tipus GuessNumberIntentsNoRepetits i jugar. El codi que va a continuació del
+new no ha de ser necessari modificar-lo.
+
+GuessNumberIntentsNoRepetits jocEndevina = new GuessNumberIntentsNoRepetit();
+// tota la resta continua igual
+...
